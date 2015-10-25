@@ -1,0 +1,145 @@
+/* http://themes.getbootstrap.com/products/dashboard */
+
+html, body {
+    font-family: 'Open Sans';
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #282828; /* #191919 = (25, 25, 25)
+                                  #282828 = (40, 40, 40)
+                                  #e1e1e1 = (225, 225, 225) */
+}
+
+#contentPanel {
+    width: 75%;
+    height: 100%;
+    margin: 0 12.5%;
+    background-color: #282828;
+}
+
+/**********************************************/
+
+header {
+    /*border: solid 1px red;*/
+    
+    width: 100%;
+    height: 15em;
+    background-color: #282828;
+}
+
+header #logo {
+    display: block;
+    height: 100%;
+}
+
+/**********************************************/
+
+/* Responsive Web Design Navigation Menu Tutorial */
+/*  https://www.youtube.com/watch?v=97njQRCVxPU   */
+
+#nav-menu {
+    /*border: solid 1px blue;*/
+    
+    font-family: 'Open Sans Light';
+    font-size: 20px;
+    float: left;
+    width: 200px;
+    padding-right: 30px;
+}
+
+#nav-menu-items li {
+    list-style: none;
+    margin: 20px;
+}
+
+#nav-menu-items li a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #e1e1e1;
+}
+
+#nav-menu-items a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #3cb0fd;
+}
+
+#nav-menu-items a.selected {
+    background: #191919;
+}
+
+#menu-trigger {
+    display: none;
+    overflow: hidden;
+    padding: 10px 25px;
+    font-size: 75%;
+    color: #e1e1e1;
+    background-color: #191919;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    #contentPanel {
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    header #logo {
+        margin: 0 auto;
+    }
+    
+    #menu-trigger {
+        display: block;
+    }
+    
+    #nav-menu {
+        width: 100%
+    }
+    
+    #nav-menu-items {
+        display: none;
+    }
+    
+    #nav-menu-items.nav-expanded {
+        display: block;
+    }
+    
+    #nav-menu-items li {
+        border-bottom: 1px solid #e1e1e1;
+        margin: 0;
+    }
+    
+    #nav-menu-items li:last-child {
+        border-bottom: none;
+    }
+}
+
+/**********************************************/
+
+.animated-box-shadow {
+    -webkit-transition: box-shadow 400ms;
+    transition: box-shadow 400ms;
+}
+
+.fixed-box-shadow {
+    -webkit-transition: box-shadow 800ms;
+    transition: box-shadow 800ms;
+}
+
+#content {
+    /*border: solid 1px green;*/
+    
+    font-size: 20px;
+    overflow: hidden;
+    /* Top, Right, Bottom, Left */
+    padding: 25px 50px 50px 75px;
+    background-color: #e1e1e1;
+}
+
+#content h1 {
+    font-family: 'Open Sans Light';
+}
