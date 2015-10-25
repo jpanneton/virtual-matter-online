@@ -33,6 +33,7 @@ $(document).ready(function () {
     
     // Navigation menu events
     $("#nav-menu-items a").click(function() {
+        
         // Select menu item
         $("#nav-menu-items a").removeClass('selected');
         $(this).addClass('selected');
@@ -44,13 +45,13 @@ $(document).ready(function () {
         // Display according page
         var page = $(this).attr('href');
         $("#content div").filter(function(){ return ! $(this).is(":hidden"); })
-                         .fadeOut('fast', function() {
+                         .stop().fadeOut('fast', function() {
             // New page content fade-in
-            $(page).fadeIn('slow');
+            $(page).stop().fadeIn('slow');
             
             // Animated page content wrapping (animated page height)
             var autoHeight = $("#content").height();
-            $("#content").height(currentHeight).animate( {
+            $("#content").height(currentHeight).stop().animate( {
                 height: autoHeight
             }, 'fast');
         });
