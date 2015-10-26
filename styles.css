@@ -1,6 +1,6 @@
 /* http://themes.getbootstrap.com/products/dashboard */
 
-html, body, #viewport {
+html, body {
     font-family: 'Open Sans';
     width: 100%;
     height: 100%;
@@ -8,14 +8,13 @@ html, body, #viewport {
 }
 
 body {
-    position: absolute;
+    background-color: #282828; /* #191919 = (25, 25, 25)
+                                  #282828 = (40, 40, 40)
+                                  #e1e1e1 = (225, 225, 225) */
 }
 
 #viewport {
     overflow-x: hidden;
-    background-color: #282828; /* #191919 = (25, 25, 25)
-                                  #282828 = (40, 40, 40)
-                                  #e1e1e1 = (225, 225, 225) */
 }
 
 #contentPanel {
@@ -136,7 +135,7 @@ header #logo {
 }
 
 #content {
-    /*border: solid 1px green;*/
+    /*border: solid 1px red;*/
     
     font-size: 20px;
     overflow: hidden;
