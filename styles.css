@@ -3,7 +3,6 @@
 html, body {
     font-family: 'Open Sans';
     width: 100%;
-    height: 100%;
     margin: 0;
 }
 
@@ -145,4 +144,12 @@ header #logo {
 
 #content h1 {
     font-family: 'Open Sans Light';
+}
+
+#content h1 {
+    font-family: 'Open Sans Light';
+}
+
+#content p {
+    text-align: justify;
 }
