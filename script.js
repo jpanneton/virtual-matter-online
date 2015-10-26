@@ -15,14 +15,28 @@ function generateRandomBoxShadow(animated) {
     }
 }
 
-function scrollToTop(section)  
+function updateHeight(section, currentHeight) {
+    if(currentHeight === undefined) {
+        // Last section height
+        currentHeight = $(section).height();
+        $(section).css('height', 'auto');
+    }
+    
+    // Transition to new section height
+    var autoHeight = $(section).height();
+    $(section).height(currentHeight).stop().animate( {
+        height: autoHeight
+    }, 'fast');
+}
+
+function scrollToTop()  
 {  
     $("html, body").animate( {  
             scrollTop: 0  
         }, 'fast');  
 } 
 
-$(document).ready(function () {
+$(document).ready(function() {
     
     // Animated box shadow
     generateRandomBoxShadow(true);
@@ -57,10 +71,7 @@ $(document).ready(function () {
             $(page).stop().fadeIn('slow');
             
             // Animated page content wrapping (animated page height)
-            var autoHeight = $("#content").height();
-            $("#content").height(currentHeight).stop().animate( {
-                height: autoHeight
-            }, 'fast');
+            updateHeight("#content", currentHeight);
         });
         
         // Restore default position
@@ -71,7 +82,10 @@ $(document).ready(function () {
     });
 });
 
-$(window).load(function () {
-
+$(window).load(function() {
     $(window).resize();
+});
+
+$(window).resize(function() {
+    updateHeight("#content");
 });
