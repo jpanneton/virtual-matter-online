@@ -1,4 +1,4 @@
-/* http://themes.getbootstrap.com/products/dashboard */
+/* Margin/Padding notation : Top, Right, Bottom, Left */
 
 html, body {
     font-family: 'Open Sans';
@@ -20,7 +20,6 @@ body {
 #contentPanel {
     width: 75%;
     height: 100%;
-    /* Top, Right, Bottom, Left */
     margin: 0 12.5% 5% 12.5%;
     background-color: #282828;
 }
@@ -90,7 +89,7 @@ header #logo {
 @media screen and (max-width: 720px) {
     #contentPanel {
         width: 90%;
-        margin: 0 5%;
+        margin: 0 5% 5% 5%;
     }
     
     header #logo {
@@ -140,7 +139,6 @@ header #logo {
     
     font-size: 20px;
     overflow: hidden;
-    /* Top, Right, Bottom, Left */
     padding: 25px 50px 50px 75px;
     background-color: #e1e1e1;
 }
