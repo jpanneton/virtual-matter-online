@@ -9,6 +9,7 @@ html, body {
 }
 
 body {
+    position: relative;
     background-color: #282828; /* #191919 = (25, 25, 25)
                                   #282828 = (40, 40, 40)
                                   #e1e1e1 = (225, 225, 225) */
