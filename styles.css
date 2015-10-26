@@ -138,8 +138,8 @@ header #logo {
     /*border: solid 1px red;*/
     
     font-size: 20px;
-    overflow: hidden;
-    padding: 25px 50px 50px 75px;
+    overflow-x: hidden;
+    padding: 25px 7.5% 50px 10%; /* 25px 50px 50px 75px */
     background-color: #e1e1e1;
 }
 
