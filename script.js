@@ -15,6 +15,13 @@ function generateRandomBoxShadow(animated) {
     }
 }
 
+function scrollToTop(section)  
+{  
+    $("html, body").animate( {  
+            scrollTop: 0  
+        }, 'fast');  
+} 
+
 $(document).ready(function () {
     
     // Animated box shadow
@@ -55,6 +62,9 @@ $(document).ready(function () {
                 height: autoHeight
             }, 'fast');
         });
+        
+        // Restore default position
+        scrollToTop();
         
         // Fixed box shadow
         generateRandomBoxShadow(false);
