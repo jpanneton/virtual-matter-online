@@ -44,6 +44,7 @@ $(document).ready(function() {
     // Home page setup
     $("#content div").hide();
     $("#home").show();
+    updateHeight("#content");
     
     // Mobile devices menu trigger
     $("#menu-trigger").click(function() {
