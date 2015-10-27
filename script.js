@@ -43,8 +43,9 @@ $(document).ready(function() {
 
     // Home page setup
     $("#content div").hide();
-    $("#home").show();
-    updateHeight("#content", $("#home").height());
+    $("#home").fadeIn('slow', function() {
+        updateHeight("#content");
+    });
     
     // Mobile devices menu trigger
     $("#menu-trigger").click(function() {
@@ -62,7 +63,7 @@ $(document).ready(function() {
         
         // Last page height
         var currentHeight = $("#content").height();
-        $('#content').css('height', 'auto');
+        $("#content").css('height', 'auto');
         
         // Display according page
         var page = $(this).attr('href');
