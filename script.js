@@ -32,8 +32,8 @@ function updateHeight(section, currentHeight) {
 function scrollToTop()  
 {  
     $("html, body").animate( {  
-            scrollTop: 0  
-        }, 'fast');  
+        scrollTop: 0  
+    }, 'fast');  
 } 
 
 $(document).ready(function() {
@@ -44,7 +44,7 @@ $(document).ready(function() {
     // Home page setup
     $("#content div").hide();
     $("#home").show();
-    updateHeight("#content");
+    updateHeight("#content", $("#home").height());
     
     // Mobile devices menu trigger
     $("#menu-trigger").click(function() {
