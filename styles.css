@@ -46,7 +46,7 @@ header #logo {
 #nav-menu {
     /*border: solid 1px blue;*/
     
-    font-family: 'Open Sans Light';
+    font-weight: lighter;
     font-size: 20px;
     float: left;
     width: 200px;
@@ -143,11 +143,7 @@ header #logo {
 }
 
 #content h1 {
-    font-family: 'Open Sans Light';
-}
-
-#content h1 {
-    font-family: 'Open Sans Light';
+    font-weight: lighter;
 }
 
 #content p {
