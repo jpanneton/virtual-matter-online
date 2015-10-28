@@ -149,3 +149,25 @@ header #logo {
 #content p {
     text-align: justify;
 }
+
+/*--------------------------------------------*/
+
+#content img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home img {
+    max-width: 75%;
+}
+
+#contact img {
+    max-width: 50%;
+}
+
+#contact p {
+    text-align: center;
+}

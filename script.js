@@ -3,6 +3,9 @@ function generateRandomBoxShadow(animated) {
     content.className = animated ? "animated-box-shadow" : "fixed-box-shadow";
     
     var randomColor = '#' + Math.random().toString(16).slice(2, 8);
+    
+    // Email addresses: same color as box shadow
+    $("#contact a").css('color', randomColor);
 
     if(animated) {
         $("#content").css('box-shadow', 'none');
