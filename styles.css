@@ -164,6 +164,18 @@ header #logo {
     max-width: 75%;
 }
 
+#support p {
+    text-align: center;
+}
+
+#support img {
+    max-width: 50%;
+}
+
+#support a {
+    display: block;
+}
+
 #contact img {
     max-width: 50%;
 }

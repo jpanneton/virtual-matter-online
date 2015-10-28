@@ -7,7 +7,7 @@ function generateRandomBoxShadow(animated) {
     // Email addresses: same color as box shadow
     $("#contact a").css('color', randomColor);
 
-    if(animated) {
+    if(animated) { 
         $("#content").css('box-shadow', 'none');
         setTimeout(function() {
             $("#content").css('box-shadow', '10px 10px 0px ' + randomColor);
