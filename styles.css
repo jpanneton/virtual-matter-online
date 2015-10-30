@@ -153,7 +153,7 @@ header #logo {
 /*--------------------------------------------*/
 
 .leftAligned {
-    display: inline;
+    text-align: left;
 }
 
 #content img {
