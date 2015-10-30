@@ -152,6 +152,10 @@ header #logo {
 
 /*--------------------------------------------*/
 
+.leftAligned {
+    display: inherit;
+}
+
 #content img {
     display: block;
     max-width: 100%;
