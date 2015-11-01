@@ -152,10 +152,6 @@ header #logo {
 
 /*--------------------------------------------*/
 
-.leftAligned {
-    text-align: left;
-}
-
 #content img {
     display: block;
     max-width: 100%;
@@ -178,6 +174,10 @@ header #logo {
 
 #support a {
     display: block;
+}
+
+#support .leftAligned {
+    text-align: left;
 }
 
 #contact img {
